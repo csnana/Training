@@ -1,0 +1,16 @@
+		dc.setCapability("testName", "AndroidTest"+System.currentTimeMillis());
+		dc.setCapability("platformName", "IOS");
+		dc.setCapability("udid", "4a87c6ff96ac1566463b8f9b9e28b66d4fd7a76c");
+		dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.dbs.dbspaylah2");
+		dc.setCapability("newSessionWaitTimeout", 700);
+		dc.setCapability("accessKey", "eyJ4cC51Ijo0OTU1NzM5LCJ4cC5wIjoxMjU3NTYsInhwLm0iOiJNVFU0TURJM05qYzBOemt6TlEiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE4OTU2MzY3NDksImlzcyI6ImNvbS5leHBlcml0ZXN0In0.aZ4azTUUS9hNT1PrVn0iB6eQEuMAnxgxPKuvQNJQK4Q");
+		driver = new AndroidDriver<AndroidElement>(new URL(getProperty("url",cloudProperties) + "/wd/hub"),factory, dc);
+		SeeTestClient seetest = new SeeTestClient(driver);
+		seetest.setProperty("ios.auto.accept.alerts", "true");
+		Thread.sleep(2000);
+		File f = new File("/Users/satheeshnukala/Documents/perm.png");
+		if (f.exists())
+		System.out.println("Exists");
+		else
+		System.out.println("Does not Exists");
+		driver.executeScript("seetest:client.simulateCapture("+f+")");

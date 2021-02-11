@@ -1,0 +1,55 @@
+And below are the exception details:
+ 
+Loaded pr
+Oct 12, 2020 11:19:59 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+Exists
+Exception in thread "main" org.openqa.selenium.JavascriptException: javascript error (javascript error. An unknown server-side error occurred. status='false'. Failed to complete internal method: 'simulateCapture args: [/Users/satheeshnukala/Documents/perm.png]', details: Failed to simulate capture: File /Users/satheeshnukala/Documents/perm.png not exists)  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'M06GMBWP1FJG8WN', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_92'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {appBuildVersion: , appReleaseVersion: , appiumVersion: 1.8.0, applicationClearData: false, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, automationName: XCUITest, bundleId: com.dbs.dbspaylah2, commandTimeouts: 120000, desired: {bundleId: com.dbs.dbspaylah2, deviceQuery: @os='ios', newSessionWaitTimeout: 700, platformName: iOS, testName: AndroidTest1602481774757, udid: 4a87c6ff96ac1566463b8f9b9e2...}, device.category: PHONE, device.majorVersion: 13, device.manufacture: Apple, device.model: iPhone X, device.name: iPhone X DBS-0180, device.os: iOS, device.screenSize: 1125x2436, device.serialNumber: 4a87c6ff96ac1566463b8f9b9e2..., device.version: 13.4.1, deviceQuery: @os='ios', deviceUDID: 4a87c6ff96ac1566463b8f9b9e2..., dontGoHomeOnQuit: false, dontStopAppOnReset: false, ehmPrefixUrl: /agent-10, ehmUrl: https://dbs-sg.experitest.c..., fullReset: false, gridNodePort: 7798, install.only.for.update: false, instrumentApp: false, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 700, noReset: false, platform: IOS, platformName: iOS, projectName: , reportDirectory: reports, reportFormat: xml, reportTestId: 6373, reportUrl: https://dbs-sg.experitest.c..., reservationDuration: 240, takeScreenshots: true, test.type: Mobile, testName: AndroidTest1602481774757, udid: 4a87c6ff96ac1566463b8f9b9e2..., useKeystore: false, waitForDeviceTimeout: 120000}
+Session ID: CLOUD-SID:2020-10-12_01-49-36-768a016c-0265-42ec-bec6-12b0f294b0fe
+       at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+       at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+       at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+       at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+       at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+       at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+       at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+       at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+       at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+       at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+       at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+       at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+       at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+       at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+       at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+       at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+       at AndroidDemoTest.main(AndroidDemoTest.java:147)
+
+//Cloud consile log
+2020-10-12 11:19:48 Set show pass image in report to: true
+2020-10-12 11:19:48 Get device property: device.os
+2020-10-12 11:19:48 Start test AndroidTest1602481774757
+2020-10-12 11:19:49 Start steps group 'New Session [iOS]'
+2020-10-12 11:19:49 Get device property: device.version
+2020-10-12 11:19:49 Init Actual Capabilities
+2020-10-12 11:19:50 Init Automation [XCUITest]
+2020-10-12 11:19:50 Init Context [NATIVE_APP]
+2020-10-12 11:19:51 Set property ios.close.keyboard.should.be.forced to: true
+2020-10-12 11:19:51 Get device property: device.category
+2020-10-12 11:19:51 Get context list
+2020-10-12 11:19:52 Set property ios.native.nonInstrumented to: true
+2020-10-12 11:19:52 Start writing device log for iPhone X DBS-0180
+2020-10-12 11:19:52 Launch native activity / URL com.dbs.dbspaylah2
+2020-10-12 11:19:52 Launch native activity com.dbs.dbspaylah2
+2020-10-12 11:19:59 Stop steps group
+2020-10-12 11:19:59 Set property ios.auto.accept.alerts to: true
+2020-10-12 11:20:00 Set Property [ios.auto.accept.alerts, true]
+2020-10-12 11:20:02 Simulate capture /Users/satheeshnukala/Documents/perm.png
+2020-10-12 11:20:02 Simulate Capture [/Users/satheeshnukala/Documents/perm.png]
+2020-10-12 11:21:03 Set property ios.close.keyboard.should.be.forced to: null
+2020-10-12 11:21:03 Set property ios.native.nonInstrumented to: false
+2020-10-12 11:21:03 Set property ios.auto.accept.alerts to: false
