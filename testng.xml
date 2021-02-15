@@ -16,7 +16,7 @@
     <test name="TestIE">
         <!--        <parameter name="deviceQuery" value="@os='android'"/>-->
         <classes>
-            <class name="com.experitest.auto.Grid"/>
+            <class name="com.experitest.auto.LocalAndroidTest"/>
         </classes>
     </test>
 </suite> <!-- Suite -->
