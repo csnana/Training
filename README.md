@@ -72,4 +72,4 @@ Create a new feature file and associated step definition and create test scripts
  4. `run tests` -  (all of them) 
  5. `adb -s deviceID --forward --remove localPort` -  Remove localPort for each forward that was set
  6. `rdb stop_rdb` 
-Upfdate 2
+Upfdate 3
