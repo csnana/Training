@@ -16,7 +16,7 @@
     <test name="TestIE">
         <!--        <parameter name="deviceQuery" value="@os='android'"/>-->
         <classes>
-            <class name="com.experitest.auto.LocalAndroidTest"/>
+            <class name="com.experitest.auto.IOSDemoTest"/>
         </classes>
     </test>
 </suite> <!-- Suite -->
