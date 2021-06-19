@@ -23,7 +23,7 @@ public class DBSMultipleRuns {
 		dc.setCapability("testName", "Quick Start iOS Native Demo");
 		dc.setCapability("accessKey", accessKey);
 		dc.setCapability("UDID", "00008030-000A58C20EC1802E");
-		dc.setCapability("deviceQuery", "@os='ios' and @category='PHONE'");
+//		dc.setCapability("deviceQuery", "@os='ios' and @category='PHONE'");
 //		dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
 		dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
 		driver = new IOSDriver<>(new URL("https://dbs-sg.experitest.com/wd/hub"), dc);
