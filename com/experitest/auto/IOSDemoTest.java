@@ -20,6 +20,7 @@ public class IOSDemoTest {
 
 	@BeforeTest
 	public void setUp() throws MalformedURLException {
+		System.out.println("iOS test start");
 		dc.setCapability("testName", "Quick Start iOS Native Demo");
 		dc.setCapability("accessKey", accessKey);
 		dc.setCapability("deviceQuery", "@os='ios' and @category='PHONE'");
@@ -43,6 +44,7 @@ public class IOSDemoTest {
 		driver.findElement(By.xpath("//*[@id='Switzerland']")).click();
 		driver.findElement(By.xpath("//*[@id='sendPaymentButton']")).click();
 		driver.findElement(By.xpath("//*[@id='Yes']")).click();
+		System.out.println("iOS test end");
 	}
 
 	@AfterTest
