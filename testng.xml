@@ -16,7 +16,7 @@
     <test name="Test1">
         <!--        <parameter name="deviceQuery" value="@os='android'"/>-->
         <classes>
-            <class name="com.experitest.auto.DBSMultipleRuns"/>
+            <class name="com.experitest.auto.LocalAndroidTest"/>
         </classes>
     </test>
 </suite> <!-- Suite -->

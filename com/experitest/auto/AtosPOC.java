@@ -1,4 +1,4 @@
-package src.com.experitest.auto;
+package com.experitest.auto;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -12,7 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class TestCode {
+public class AtosPOC {
 
     private String accessKey = "eyJhbGciOiJIUzI1NiJ9.eyJ4cC51IjoxODE5ODYwLCJ4cC5wIjoyLCJ4cC5tIjoxNTk4NDM5NTM0MDUwLCJleHAiOjE5MTM3OTk1MzQsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.gYJg30EjNnYNvDTFyJn064dTMluiTvpMI5Ss8Yj4rKg";
     protected AndroidDriver<AndroidElement> driver = null;
@@ -22,7 +22,8 @@ public class TestCode {
     public void setUp() throws MalformedURLException {
         dc.setCapability("testName", "Quick Start Android Native Demo");
         dc.setCapability("accessKey", accessKey);
-        dc.setCapability("deviceQuery", "@os='android' and @category='PHONE' and @serialnumber='RF8MA30SSDA'");
+        dc.setCapability("deviceQuery", "@os='android' and @category='PHONE' ");
+//        and @serialnumber='RF8MA30SSDA'
 //        dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");

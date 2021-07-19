@@ -29,6 +29,11 @@
     <remote-repository>
       <option name="id" value="Experitest" />
       <option name="name" value="YourName" />
+      <option name="url" value="https://ocbc.experitest.com/repo/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Experitest" />
+      <option name="name" value="YourName" />
       <option name="url" value="https://cloud.experitest.com/repo/" />
     </remote-repository>
   </component>
